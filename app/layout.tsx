@@ -1,5 +1,6 @@
+import '@/styles/globals.css';
 import type { Metadata } from 'next';
-import { RootLayoutProps } from '@/types/interfaces/root.types';
+import { RootLayoutProps } from '@/types/interfaces/global.types';
 
 export const metadata: Metadata = {
   title: 'Next Tutorials',
@@ -8,7 +9,7 @@ export const metadata: Metadata = {
 
 const RootLayout = ({ children }: RootLayoutProps) => (
   <html lang='en'>
-    <body>{children}</body>
+    <body className='bg-black text-white'>{children}</body>
   </html>
 );
 
